@@ -300,3 +300,42 @@
     gap: 20px;
   }
 }
+.content__gallery-section{
+  display:flex;
+  flex-direction: column;;
+  gap:10px;
+}
+.content__gallery{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3,auto);
+  gap:20px;
+  outline: 2px solid red;
+  align-items:stretch; 
+}
+
+.content__gallery img{
+  display:block;
+  inline-size: 100%;
+  inset-block: auto;
+  object-fit: cover;
+}
+
+.sunset {
+  grid-column:span 2 ;
+}
+
+.ice-cream {
+  grid-row: span 2;
+}
+
+.tape {
+  grid-row: span 2;
+}
+.books {
+  grid-row: span 1;
+}
+.street {
+  grid-column: span 2;
+}
+
