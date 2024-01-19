@@ -39,3 +39,12 @@ outline: 1px solid var(--text-color);
   outline: 1px solid var(--text-color);
 }
 
+.page.theme_light .decorated-zone::after{
+  border-block-end: 1px solid var(--text-color);
+  border-left: 1px solid var(--text-color);
+}
+
+.page.theme_light .decorated-zone::before{
+  border-block-start: 1px solid var(--text-color);
+  border-right: 1px solid var(--text-color);
+}
