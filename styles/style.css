@@ -9,7 +9,7 @@
   gap: 40px;
   background-color: var(--bg-color, #000028);
   min-width: 375px;
-  font-family: "IBM Plex Mono", Arial, sans-serif;
+  font-family: var(--main-font);
   background-attachment: fixed;
 }
 
@@ -33,6 +33,7 @@
   padding: 10px;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 @media (width > 767px) {
@@ -51,8 +52,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-block-start: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--theme-menu-button-color);
+  border-right: 1px solid var(--theme-menu-button-color);
   top: 0;
   right: 0;
   margin: 10px;
@@ -64,8 +65,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-block-end: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--theme-menu-button-color);
+  border-left: 1px solid var(--theme-menu-button-color);
   bottom: 0;
   left: 0;
   margin: 10px;
@@ -134,7 +135,7 @@
 }
 
 .header__theme-menu-button {
-  color: var(--accent-color);
+  color: var(--theme-menu-button-color);
   font-size: 18px;
   font-weight: 400;
   border: none;
@@ -144,7 +145,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--menu-hover-color);
 }
 
 .header__theme-menu-button:focus {
@@ -156,7 +157,7 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--theme-menu-button-color);
   pointer-events: none;
 }
 
@@ -177,7 +178,7 @@
 
 .header__subtitle {
   grid-row: 3;
-  color: var(--bg-color);
+  color: var(--header-subtitle-color);
   background-color: var(--accent-color);
   font-family: var(--main-font);
   font-weight: 700;
@@ -203,6 +204,18 @@
 .content__link {
   text-shadow: 2px 2px 0px var(--title-shadow-color);
   text-decoration: none;
+}
+
+.content__link:hover {
+  text-decoration: underline;
+}
+
+.content__link:focus {
+  outline: none;
+}
+
+.content__link:focus-visible {
+  outline: 1px solid var(--main-font);
 }
 
 .content__top-section {
@@ -234,7 +247,7 @@
 }
 
 .content__section-title {
-  color: var(--accent-color);
+  color: var(--content-section-title-color);
   font-family: var(--main-font);
   font-size: 18px;
   font-weight: 700;
@@ -243,7 +256,7 @@
 }
 
 .content__section-title_inline {
-  color: var(--accent-color);
+  color:var(--content-section-title-color);
   font-family: var(--main-font);
   font-size: 18px;
   font-weight: 700;
@@ -273,7 +286,7 @@
 }
 
 .content__card-title {
-  color: var(--bg-color);
+  color: var(--content-card-title-color);
   background-color: var(--accent-color);
   font-family: var(--main-font);
   font-size: 18px;
@@ -407,7 +420,7 @@
 
 .footer__title {
   color: var(--title-color);
-  text-shadow: 2px 2px 0px var(--accent-color);
+  text-shadow: 2px 2px 0px var(--title-shadow-color);
   font-family: var(--main-font);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;

@@ -9,7 +9,6 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --main-font: "IBM Plex Mono";
   --accent-color: #ff8dcb;
   --accent-hover-color: rgba(50, 49, 45, 0.4);
   --title-color: #ffc2e6;
@@ -17,6 +16,11 @@
   --text-color: #353430;
   --cover-image: url("/images/cover-image-light.png");
   --title-shadow-color: #ff8dcb;
+  --menu-hover-color:rgba(50, 49, 45, 0.40);
+  --header-subtitle-color:#353430;
+  --theme-menu-button-color:#353430;
+  --content-section-title-color:#353430;
+  --content-card-title-color:#353430;
 }
 
 @media (width>1023px) {
@@ -29,47 +33,7 @@
   display: none;
 }
 
-.page.theme_light .header__subtitle {
-  color: var(--text-color);
-}
 
-.page.theme_light .header__theme-menu-button {
-  color: var(--text-color);
-  border: none;
-  background: none;
-}
 
-.page.theme_light .header__theme-menu-button_active {
-  outline: 1px solid var(--text-color);
-}
 
-.page.theme_light .header__theme-menu-button:hover {
-  outline: 1px solid var(--text-color);
-}
 
-.page.theme_light .decorated-zone::after {
-  border-block-end: 1px solid var(--text-color);
-  border-left: 1px solid var(--text-color);
-}
-
-.page.theme_light .decorated-zone::before {
-  border-block-start: 1px solid var(--text-color);
-  border-right: 1px solid var(--text-color);
-}
-
-.page.theme_light .content__section-title {
-  color: var(--text-color);
-}
-
-.page.theme_light .content__section-title_inline {
-  color: var(--text-color);
-}
-
-.page.theme_light .content__card-title {
-  color: var(--text-color);
-}
-
-.page.theme_light .footer__title {
-  color: var(--title-color);
-  text-shadow: 2px 2px 0px var(--title-shadow-color);
-}
