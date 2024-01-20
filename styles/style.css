@@ -178,7 +178,7 @@
   font-size: 18px;
 }
 
-@media (width>768px) {
+@media (width>767px) {
   .header__subtitle {
     width: 50%;
   }
@@ -199,7 +199,7 @@
   row-gap: 20px;
 }
 
-@media (width>768px) {
+@media (width>767px) {
   .content__top-section {
     display: grid;
     grid-template-columns: 0.3333fr 0.6666fr;
@@ -278,7 +278,7 @@
   gap: 20px;
 }
 
-@media (width > 1024px) {
+@media (width > 1023px) {
   .content__middle-section-cards {
     flex-direction: row;
   }
@@ -299,7 +299,7 @@
   gap: 20px;
 }
 
-@media (width>768px) {
+@media (width>767px) {
   .content__last-section {
     display: grid;
     grid-template-columns: 0.33fr 0.66fr;
