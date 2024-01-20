@@ -215,7 +215,7 @@
 @media (width>767px) {
   .content__top-section {
     display: grid;
-    grid-template-columns: 0.3333fr 0.6666fr;
+    grid-template-columns: 0.33fr 0.67fr;
     grid-template-rows: 1fr;
     gap: 20px;
   }
@@ -414,6 +414,7 @@
   width: 100%;
   text-align: center;
 }
+
 @media (width > 767px) {
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
