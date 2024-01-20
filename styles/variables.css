@@ -5,11 +5,10 @@
 
 :root {
   --accent-color: #ff0070;
-  --accent-hover-color:rgba(50, 49, 45, 0.40);
-  --title-color:#DB00FF;
-  --bg-color:#000028;
-  --text-color:#F1B2CE;
-  --main-font:'IBM Plex Mono';
+  --accent-hover-color: rgba(50, 49, 45, 0.4);
+  --title-color: #db00ff;
+  --bg-color: #000028;
+  --text-color: #f1b2ce;
+  --main-font: "IBM Plex Mono";
   --cover-image: url("/images/cover-image-dark.png");
 }
-
