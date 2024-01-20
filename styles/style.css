@@ -12,10 +12,11 @@
   font-family: "IBM Plex Mono", Arial, sans-serif;
   background-attachment: fixed;
 }
+
 @media (width > 767px) {
   .page {
-    gap:60px;
-}
+    gap: 60px;
+  }
 }
 
 .header {
@@ -96,7 +97,7 @@
   border-radius: 4.5px;
   margin-left: 10px;
   margin-right: 10px;
-  box-shadow: 0px 0px 4px #ff0070;
+  box-shadow: 0px 0px 4px var(--accent-color);
 }
 
 .header__theme-menu {
@@ -162,7 +163,7 @@
 .header__title {
   justify-self: start;
   color: var(--title-color);
-  text-shadow: 4px 4px 0px var(--accent-color);
+  text-shadow: 4px 4px 0px var(--title-shadow-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
@@ -197,6 +198,11 @@
   row-gap: 50px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.content__link {
+  text-shadow: 2px 2px 0px var(--title-shadow-color);
+  text-decoration: none;
 }
 
 .content__top-section {
@@ -400,8 +406,8 @@
 }
 
 .footer__title {
-  color: #db00ff;
-  text-shadow: 2px 2px 0px #ff0070;
+  color: var(--title-color);
+  text-shadow: 2px 2px 0px var(--accent-color);
   font-family: var(--main-font);
   font-size: 116px;
   font-weight: 700;
