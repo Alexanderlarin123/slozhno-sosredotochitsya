@@ -12,6 +12,11 @@
   font-family: "IBM Plex Mono", Arial, sans-serif;
   background-attachment: fixed;
 }
+@media (width > 767px) {
+  .page {
+    gap:60px;
+}
+}
 
 .header {
   position: relative;
@@ -212,7 +217,7 @@
   .content {
     padding-left: 20px;
     padding-right: 20px;
-    row-gap: 60px;
+    row-gap: 80px;
   }
 }
 
