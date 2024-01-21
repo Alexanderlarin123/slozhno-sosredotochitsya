@@ -17,9 +17,10 @@
   --text-color: #f1b2ce;
   --cover-image: url("/images/cover-image-dark.png");
   --title-shadow-color: #ff0070;
-  --menu-hover-color: rgba(255, 0, 112, 0.40);
-  --header-subtitle-color:#000028;
-  --theme-menu-button-color:#FF0070;
-  --content-section-title-color:#FF0070;
-  --content-card-title-color:#000028;
+  --link-shadow-color: #ff0070;
+  --menu-hover-color: rgba(255, 0, 112, 0.4);
+  --header-subtitle-color: #000028;
+  --theme-menu-button-color: #ff0070;
+  --content-section-title-color: #ff0070;
+  --content-card-title-color: #000028;
 }
