@@ -11,6 +11,10 @@
   min-width: 375px;
   font-family: var(--main-font);
   background-attachment: fixed;
+  background-image: var(--cover-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (width > 767px) {
@@ -21,10 +25,6 @@
 
 .header {
   position: relative;
-  background-image: var(--cover-image);
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
@@ -163,7 +163,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--theme-menu-button-color);
 }
 
 .header__theme-menu-button_active {
@@ -226,7 +226,7 @@
 }
 
 .content__link:focus-visible {
-  outline: 1px solid var(--main-font);
+  border: 1px solid var(--text-color);
 }
 
 .content__top-section {
